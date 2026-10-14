@@ -1,0 +1,12 @@
+# Builds the React frontend and serves the API from Netlify Functions,
+# with data stored in Netlify Database (managed Postgres).
+[build]
+  command = "npm run build"
+  publish = "frontend/dist"
+
+# Single-page-app fallback: any URL serves index.html so refreshing works.
+# (Function routes like /api/* take priority over this rule.)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
