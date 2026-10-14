@@ -14,7 +14,7 @@ export default function Layout({ children }) {
         {children}
       </main>
       <footer className="site-footer">
-        <div className="container">Cloud Computing CA2 &middot; React on Netlify, Express on Render, MongoDB Atlas</div>
+        <div className="container">Cloud Computing CA2 &middot; React + Netlify Functions + Netlify Database</div>
       </footer>
     </>
   );
