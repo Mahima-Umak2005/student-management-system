@@ -1,9 +1,8 @@
 // The ONLY place in the frontend that talks to the backend.
-// By default the API is served from the same site (Netlify Functions at /api/*).
-// VITE_API_BASE_URL can still point at a separate backend if needed.
-// (Vite copies VITE_* variables into the public build - never put secrets in them.)
+// The API is served from the same site (Netlify Functions at /api/*),
+// so requests use relative URLs and need no configuration.
 
-const API_BASE_URL = (import.meta.env.VITE_API_BASE_URL || '').replace(/\/+$/, '');
+const API_BASE_URL = '';
 
 const REQUEST_TIMEOUT_MS = 30000;
 
