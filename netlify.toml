@@ -1,0 +1,12 @@
+# The React app lives in /frontend. Pointing Netlify there means the site builds
+# correctly even when "Base directory" is not set in the Netlify UI.
+[build]
+  base = "frontend"
+  command = "npm ci --include=dev && npm run build"
+  publish = "dist"
+
+# Single-page-app fallback: any URL serves index.html so refreshing works.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
