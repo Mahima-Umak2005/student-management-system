@@ -1,0 +1,11 @@
+# The React app lives in the "frontend" folder, so Netlify builds from there.
+[build]
+  base = "frontend"
+  command = "npm ci && npm run build"
+  publish = "dist"
+
+# Single-page-app fallback: any URL serves index.html so refreshing works.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

@@ -1,6 +1,6 @@
 # Netlify reads this file when the "Base directory" is set to "frontend".
 [build]
-  command = "npm run build"
+  command = "npm ci && npm run build"
   publish = "dist"
 
 # Single-page-app fallback: any URL serves index.html so refreshing works.
