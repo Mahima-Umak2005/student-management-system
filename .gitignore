@@ -1,0 +1,17 @@
+# Dependencies and build output
+node_modules/
+dist/
+
+# Secrets - NEVER commit real environment files
+.env
+.env.*
+!.env.example
+
+# Scratch files used in the testing section of the README
+tmp-*.json
+
+# Logs / OS / editor
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
