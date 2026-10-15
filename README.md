@@ -627,37 +627,7 @@ Screenshot each step (section 18).
 | `git push` rejected / asks for login | GitHub authentication | Sign in via the browser prompt, or use GitHub Desktop |
 | Changes to `.env` have no effect | Server not restarted | Stop (`Ctrl + C`) and start again |
 
-## 18. Screenshots checklist
 
-Take these for your report:
-
-- [ ] Atlas cluster overview (hide the connection string and password)
-- [ ] Atlas *Database Access* (user list only) and *Network Access*
-- [ ] Backend terminal showing `MongoDB connection established.`
-- [ ] Browser: `http://localhost:5000/api/health`
-- [ ] Local website with several students
-- [ ] Validation error messages on the form
-- [ ] Duplicate Student ID error
-- [ ] Search results
-- [ ] Edit dialog and the updated row
-- [ ] Delete confirmation dialog
-- [ ] Atlas *Browse Collections* showing the `students` documents
-- [ ] GitHub repository page (no `.env` file visible)
-- [ ] Render service "Live" status and environment-variable **names** (hide values)
-- [ ] Render health URL in the browser
-- [ ] Netlify deploy "Published" status
-- [ ] Live Netlify website performing add, edit, delete
-- [ ] Atlas collection before and after a change made from the live site
-- [ ] Phone-size (responsive) view
-
-## 19. Presentation and viva material
-
-See **[`docs/PRESENTATION.md`](docs/PRESENTATION.md)** for: a short explanation for your professor,
-a two-minute presentation script, a demonstration sequence, and likely viva questions with short answers.
-
-## 20. Final project verification checklist
-
-Tick each box only after you have seen it work yourself.
 
 **Local**
 - [ ] `npm install` completed in `backend` and `frontend` without errors
