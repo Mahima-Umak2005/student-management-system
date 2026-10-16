@@ -143,6 +143,9 @@ student-management-system/
 │   │   │   └── requireDatabase.js <- returns 503 if the DB is not connected
 │   │   └── utils/                 <- validation, logger (hides passwords), AppError
 │   └── test/validateStudent.test.js
+├── mcp-server/                    <- optional: lets Claude manage the platform (see its README)
+│   ├── src/                       <- index.js (stdio + HTTP), tools.js, apiClient.js
+│   └── test/tools.test.js
 └── frontend/
     ├── package.json
     ├── vite.config.js
